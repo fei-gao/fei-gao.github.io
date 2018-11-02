@@ -38,6 +38,23 @@
     font-size: 40px;
     color: black;
   }
+
+  @media(max-width: 992px) { 
+    .card-content {
+      height: 150px;
+    }
+  }
+
+  @media(max-width: 600px) { 
+    .parallax-container {
+      height: 200px;
+      background-attachment: parallax;
+    }
+    .card-content{
+      height: 130px;
+    }
+  }
+  
   </style>
 </head>
 <body>
@@ -46,42 +63,30 @@
     <nav class="nav-wraper indigo">
       <div class="container">
         <a href="#" class="brand-logo"> Fei Gao </a>
-        <a href="#contact" class="sidenav-trigger" data-target="mobile-links">
+        <a href="#" class="sidenav-trigger" data-target="mobile-links">
           <i class="material-icons"> menu </i>
         </a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="#landing"> Home </a></li>
-          <li><a href="#intro"> About Me </a></li>
+          <li><a href="#intro"> About </a></li>
           <li><a href="#projects"> Projects </a></li>
           <li><a href="#contact"> Contact </a></li>
           <li><a href="#" class="btn-floating indigo darken-4 z-depth-0"></a></li>
         </ul>
-          <ul class="sidenav grey lighten-2" id="mobile-links">
-            <li><a href="#landing"> Home </a></li>
-            <li><a href="#intro"> About Me </a></li>
-            <li><a href="#projects"> Projects </a></li>
-            <li><a href="#contact"> Contact </a></li>
-          </ul>
-        </div>
-      </nav>
+      </div>
+    </nav>
   </div>
 
-  <!-- Landing Screen -->
-<div class="section" id="landing">
-    <img src="img/landing.jpg" alt="landing" class="landing-img responsive-img">
-    <div class="landing-text">
-      <h5 id="mainText" class="center">My Name Is</h5>
-      <h2 style="color: black;"  class="center">
-          Fei Gao
-      </h2>
-      <h6 id="mainText" class="center">A Web Developer</h6>
-    </div>
-</div>
+  <!-- mobile navbar -->
+  <ul class="sidenav grey lighten-2" id="mobile-links">
+    <li><a href="#intro"> About </a></li>
+    <li><a href="#projects"> Projects </a></li>
+    <li><a href="#contact"> Contact </a></li>
+  </ul>
 
   <!-- section / intro -->
   <section class="container section scrollspy" id="intro">
     <h5>Who I am ...</h5>
-    <p> I am a web developer with a passion of building apps with real world impact. With experience in both Ruby and javascript framework. Enjoy learning new technology and frameworks in general.
+    <p> I am a web developer with a passion of building apps with real world impact. With experience in both Ruby and javascript frameworks. Enjoy learning new technology and frameworks in general.
       </p>
     </section>
     
@@ -285,21 +290,6 @@
           <input type="text" id="date" class="datepicker">
           <label for="date">Choose a date you need me for...</label>
         </div>
-        <div class="input-field">
-          <p>Services required:</p>
-          <p>
-            <label>
-              <input type="checkbox">
-              <span>Static Website</span>
-            </label>
-          </p>
-          <p>
-            <label>
-              <input type="checkbox">
-              <span>Web App</span>
-            </label>
-          </p>
-        </div>
         <div class="input-field center">
           <button class="btn">Submit</button>
         </div>
@@ -323,7 +313,7 @@
         <li><a class="grey-text text-lighten-3" href="https://github.com/fei-gao"><i class="fab fa-github"></i> Github</a></li>
         <li><a class="grey-text text-lighten-3" href="https://resume.creddle.io/resume/5054rhmh9al"><i class="far fa-file-pdf"></i> Resume</a></li>
         <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/fei-gao/"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-        <!-- <li><a class="grey-text text-lighten-3" href="#email">Email</a></li> -->
+        <li><a class="grey-text text-lighten-3" href="mailto:fgao1@ualberta.ca">Email</a></li>
       </ul>
     </div>
   </div>
