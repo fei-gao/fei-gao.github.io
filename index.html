@@ -10,14 +10,43 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
   <title>Fei Portfolio</title>
+  <style>
+  #landing{
+    position: relative;
+  }
+
+  .landing-text{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 30%;
+    justify-content: center;
+  }
+
+  .card-content:hover{
+   background-color:#f0eded;
+  }
+  .card-image img{
+    height: 170px;
+  }
+
+  .card-content{
+    height: 200px;
+  }
+
+  .card-action .fab{
+    font-size: 40px;
+    color: black;
+  }
+  </style>
 </head>
 <body>
   <!-- navbar -->
   <div class="navbar-fixed">
     <nav class="nav-wraper indigo">
       <div class="container">
-        <a href="#" class="brand-logo"> Site Title</a>
-        <a href="#" class="sidenav-trigger" data-target="mobile-links">
+        <a href="#" class="brand-logo"> Fei Gao </a>
+        <a href="#contact" class="sidenav-trigger" data-target="mobile-links">
           <i class="material-icons"> menu </i>
         </a>
         <ul class="right hide-on-med-and-down">
@@ -27,7 +56,7 @@
           <li><a href="#contact"> Contact </a></li>
           <li><a href="#" class="btn-floating indigo darken-4 z-depth-0"></a></li>
         </ul>
-          <ul class="sidenav" id="mobile-links">
+          <ul class="sidenav grey lighten-2" id="mobile-links">
             <li><a href="#landing"> Home </a></li>
             <li><a href="#intro"> About Me </a></li>
             <li><a href="#projects"> Projects </a></li>
@@ -39,21 +68,20 @@
 
   <!-- Landing Screen -->
 <div class="section" id="landing">
-    <h5 id="mainText" class="center">My Name Is</h5>
-    <h1 style="color: white;"  class="center">
-        Fei <b>Gao</b>
-    </h1>
-    <h6 id="mainText" class="center">A Web Developer</h6>
+    <img src="img/landing.jpg" alt="landing" class="landing-img responsive-img">
+    <div class="landing-text">
+      <h5 id="mainText" class="center">My Name Is</h5>
+      <h2 style="color: black;"  class="center">
+          Fei Gao
+      </h2>
+      <h6 id="mainText" class="center">A Web Developer</h6>
+    </div>
 </div>
 
   <!-- section / intro -->
   <section class="container section scrollspy" id="intro">
-    <h5>About</h5>
-    <p>What is Lorem Ipsum?
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-       
-      Why do we use it?
-       It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). 
+    <h5>Who I am ...</h5>
+    <p> I am a web developer with a passion of building apps with real world impact. With experience in both Ruby and javascript framework. Enjoy learning new technology and frameworks in general.
       </p>
     </section>
     
@@ -69,50 +97,215 @@
 <section class="container section scrollspy" id="projects">
   <h5>Projects</h5>
   <div class="row">
-    <div class="col s12 m6 l3">
+    <div class="col s12 m6 l4">
       <div class="card">
         <div class="card-image">
-          <img src="img/home_page.png" alt="jungle-rails">
+          <img class="activator" src="img/property_evaluator.png" alt="property_evaluator">
         </div>
         <div class="card-content">
-          <span class="card-title">
-            Jungle Rails
+          <span class="card-title activator">
+            Property Evaluator
           </span>
-          <p> E-commerse website made with Ruby on Rails
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, enim. Vel cupiditate, dicta expedita aspe.
+          <p> A real estate app valuable for potential buyers to compare properties.
           </p>
         </div>
-        
-        <div class="card-action">
-          <a href="https://github.com/fei-gao/jungle-rails">
+        <a href="https://github.com/fei-gao/jungle-rails">
+          <div class="card-action">
             <i class="fab fa-github"></i>                     
-          </a>
+          </div>
+        </a>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4"> Built With<i class="material-icons right">close</i></span>
+          <p>React</p>
+          <p>Axios</p>
+          <p>Express</p>
+          <p>Node.js</p>
+          <p>PostgreSQL/knex</p>
         </div>
       </div>
     </div>
-    
-  </div>
-  <a href="https://github.com/fei-gao/chatty-app"> Chatty App </a>
-  <a href="https://github.com/fei-gao/tweeter"> Tweeter </a>
-  <a href=""></a>
-</section>
 
-<!-- parallax -->
-<div class="parallax-container">
-  <div class="parallax">
-    <img src="img/stars.jpg" alt="stars" class="responsive-img">
-  </div>
-</div>
+    <div class="col s12 m6 l4">
+        <div class="card">
+          <div class="card-image">
+            <img class="activator" src="img/jungle_rails.png" alt="jungle_rails">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator">
+              Jungle Rails
+            </span>
+            <p> Inherited a pre-existing e-commerce application and enhanced it.
+            </p>
+          </div>
+          <a href="https://github.com/fei-gao/jungle-rails">
+            <div class="card-action">
+              <i class="fab fa-github"></i>                     
+            </div>
+          </a>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4"> Built With<i class="material-icons right">close</i></span>
+            <p>Ruby on Rails</p>
+          </div>
+        </div>
+    </div>
 
-<!-- section / contact  -->
+    <div class="col s12 m6 l4">
+        <div class="card">
+          <div class="card-image">
+            <img class="activator" src="img/chatty_app.png" alt="chatty_app">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator">
+              Chatty App
+            </span>
+            <p> A Slack-like real-time chat application.
+            </p>
+          </div>
+          <a href="https://github.com/fei-gao/jungle-rails">
+            <div class="card-action">
+              <i class="fab fa-github"></i>                     
+            </div>
+          </a>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4"> Built With<i class="material-icons right">close</i></span>
+            <p>Webpack with Babel</p>
+            <p>Node.js</p>
+            <p>React</p>
+            <p>WebSocket</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+              <img class="activator" src="img/tweeter.png" alt="tweeter">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator">
+                Tweeter
+              </span>
+              <p> Tweeter is a simple, single-page Twitter clone that posts and updates tweets without reloading page.
+              </p>
+            </div>
+            <a href="https://github.com/fei-gao/jungle-rails">
+              <div class="card-action">
+                <i class="fab fa-github"></i>                     
+              </div>
+            </a>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4"> Built With<i class="material-icons right">close</i></span>
+              <p>HTML/CSS/SASS</p>
+              <p>jQuery</p>
+              <p>Ajax</p>
+              <p>Node.js</p>
+              <p>Express</p>
+              <p>MongoDB</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6 l4">
+            <div class="card">
+              <div class="card-image">
+                <img class="activator" src="img/tiny_app.png" alt="tiny_app">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator">
+                  Tiny App
+                </span>
+                <p> A URL shortener with user authentication feature. Users can create, read, update and delete urls.
+                </p>
+              </div>
+              <a href="https://github.com/fei-gao/jungle-rails">
+                <div class="card-action">
+                  <i class="fab fa-github"></i>                     
+                </div>
+              </a>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4"> Built With<i class="material-icons right">close</i></span>
+                <p>Node.js</p>
+                <p>Express</p>
+                <p>Bootstrap</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l4">
+              <div class="card">
+                <div class="card-image">
+                  <img class="activator" src="img/landing.jpg" alt="landing">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator">
+                    Travel Site
+                  </span>
+                  <p> A mobile-first responsive static website.
+                  </p>
+                </div>
+                <a href="https://github.com/fei-gao/travel-site">
+                  <div class="card-action">
+                    <i class="fab fa-github"></i>                     
+                  </div>
+                </a>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4"> Built With<i class="material-icons right">close</i></span>
+                  <p>Gulp</p>
+                  <p>jQuery</p>
+                  <p>Node</p>
+                  <p>Webpack</p>
+                  <p>CSS</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </section>
+
+<!-- contact form -->
 <section class="section container scrollspy" id="contact">
-  <h5>Contact</h5>
-  <p>What is Lorem Ipsum?
-  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-  
-  Why do we use it?
-  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). 
-</p>
+  <div class="row">
+    <div class="col s12 l5">
+      <h2 class="indigo-text text-darken-4">Get in Touch</h2>
+      <p> The easiest way to get in touch with me is connecting through LinkedIn or sending me a message.</p>
+    </div>
+    <div class="col s12 l5 offset-l2">
+      <form>
+        <div class="input-field">
+          <i class="material-icons prefix">email</i>
+          <input type="email" id="email">
+          <label for="email">Your Email</label>
+        </div>
+        <div class="input-field">
+          <i class="material-icons prefix">message</i>
+          <textarea id="message" class="materialize-textarea" cols="20" rows="20"></textarea>
+          <label for="message">Your Message</label>
+        </div>
+        <div class="input-field">
+          <i class="material-icons prefix">date_range</i>
+          <input type="text" id="date" class="datepicker">
+          <label for="date">Choose a date you need me for...</label>
+        </div>
+        <div class="input-field">
+          <p>Services required:</p>
+          <p>
+            <label>
+              <input type="checkbox">
+              <span>Static Website</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox">
+              <span>Web App</span>
+            </label>
+          </p>
+        </div>
+        <div class="input-field center">
+          <button class="btn">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
 </section>
 
 <!-- footer -->
@@ -121,15 +314,15 @@
   <div class="row">
     <div class="col l6 s12">
       <h5>About Me</h5>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+      <p> I am eager to learn new technology and passionate about building awesome product.</p>
+      <p> Values mastery, authenticity, and positivity to help build and grow product. </p>
     </div>
     <div class="col l4 offset-l2 s12">
       <h5 class="white-text">Connect</h5>
       <ul>
         <li><a class="grey-text text-lighten-3" href="https://github.com/fei-gao"><i class="fab fa-github"></i> Github</a></li>
         <li><a class="grey-text text-lighten-3" href="https://resume.creddle.io/resume/5054rhmh9al"><i class="far fa-file-pdf"></i> Resume</a></li>
-        <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/fei-gao/"><i class="fab fa-linkedin"></i> Linked In</a></li>
+        <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/fei-gao/"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
         <!-- <li><a class="grey-text text-lighten-3" href="#email">Email</a></li> -->
       </ul>
     </div>
@@ -153,6 +346,10 @@
     $('.parallax').parallax();
     $('.tabs').tabs();
     $('.scrollspy').scrollSpy();
+    $('.datepicker').datepicker({
+        disableWeekends: true,
+        yearRange: 1
+      });
    })
    </script>
 </body>
