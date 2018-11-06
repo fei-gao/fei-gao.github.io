@@ -1,47 +1,84 @@
-.tabs .indicator{
-    background-color: #1a237e;
-}
-.tabs .tab a:focus, .tabs .tab a:focus.active{
-    background: transparent;
+.typewriter h6 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid black; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
-.devicons-wrap{
-    text-align: center;
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+.tabs .indicator {
+  background-color: #1a237e;
+}
+.tabs .tab a:focus,
+.tabs .tab a:focus.active {
+  background: transparent;
+}
+
+.devicons-wrap {
+  text-align: center;
+}
+.devicons-wrap:hover {
+  text-decoration: underline;
 }
 .devicons {
-    max-width: 60px;
+  max-width: 60px;
 }
-.devicons:hover{
-    opacity: 0.6;
+.devicons:hover {
+  opacity: 0.5;
 }
-.card-content:hover{
-background-color:#f0eded;
+.card-content:hover {
+  background-color: #f0eded;
 }
-.card-image img{
-height: 170px;
-}
-
-.card-content{
-height: 200px;
+.card-image img {
+  height: 170px;
 }
 
-.card-action .fab{
-font-size: 40px;
-color: black;
-}
-
-@media(max-width: 992px) { 
 .card-content {
-    height: 150px;
-}
+  height: 200px;
 }
 
-@media(max-width: 600px) { 
-.parallax-container {
+.card-action .fab {
+  font-size: 40px;
+  color: black;
+}
+.offset-l2 ul li:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 992px) {
+  .card-content {
+    height: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  .parallax-container {
     height: 200px;
     background-attachment: parallax;
-}
-.card-content{
+  }
+  .card-content {
     height: 130px;
-}
+  }
 }
