@@ -62,7 +62,9 @@
 }
 .card-action .fas {
   font-size: 40px;
-  color:blue;
+  color: white;
+  background-color: blue;
+  border-radius: 50%;
 }
 .offset-l2 ul li:hover {
   text-decoration: underline;
