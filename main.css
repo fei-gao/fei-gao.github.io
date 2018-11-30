@@ -63,7 +63,7 @@
 .card-action .fas {
   font-size: 40px;
   color: white;
-  background-color: blue;
+  background-color: rgb(13, 56, 126);
   border-radius: 50%;
 }
 .offset-l2 ul li:hover {
