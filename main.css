@@ -60,6 +60,10 @@
   font-size: 40px;
   color: black;
 }
+.card-action .fas {
+  font-size: 40px;
+  color:blue;
+}
 .offset-l2 ul li:hover {
   text-decoration: underline;
 }
